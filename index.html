@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>caramel — Inês Caramelo · creative portfolio</title>
+  <meta name="description" content="The creative portfolio of Inês Caramelo — illustration, branding, storytelling and campaigns. Based in Cork, Ireland." />
+  <meta property="og:title" content="caramel — Inês Caramelo" />
+  <meta property="og:description" content="Illustration · branding · storytelling. Based in Cork, Ireland." />
+  <link rel="stylesheet" href="styles/caramel.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cream:    '#F5F1E8',
+            lavender: '#D6CFF8',
+            pink:     '#ED0086',
+            orange:   '#F25823',
+            lime:     '#BCDE3F',
+            ink:      '#1A1A1A',
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
+</head>
+<body class="bg-cream text-ink min-h-screen">
+
+<!-- ===========================================================
+     NAV
+=========================================================== -->
+<nav class="caramel-nav sticky top-0 z-50 w-full">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-10 py-3 flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-2">
+      <!-- caramel face mark -->
+      <svg width="36" height="36" viewBox="0 0 200 200" fill="none" aria-hidden="true">
+        <g stroke="#1A1A1A" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none">
+          <path d="M55 60 q -6 -14, 4 -22 q 8 -6, 10 4 q 2 8 -6 10"/>
+          <path d="M75 50 q -2 -16, 10 -18 q 10 0, 8 12 q -2 8 -10 8"/>
+          <path d="M100 42 q 2 -16, 14 -14 q 12 4, 6 16 q -4 8 -12 6"/>
+          <path d="M130 50 q 8 -14, 18 -8 q 8 6, 0 16 q -6 6 -14 2"/>
+          <path d="M40 90 q -10 4, -14 14 q -2 10, 8 8"/>
+          <path d="M165 90 q 12 2, 16 14 q 2 12, -10 10"/>
+          <path d="M65 100 q 12 -10, 26 0"/>
+          <path d="M65 100 l -3 -6"/><path d="M72 96 l -2 -7"/><path d="M80 94 l 0 -7"/>
+          <path d="M88 96 l 2 -7"/><path d="M91 100 l 3 -6"/>
+          <path d="M110 100 q 12 -10, 26 0"/>
+          <path d="M110 100 l -3 -6"/><path d="M117 96 l -2 -7"/><path d="M125 94 l 0 -7"/>
+          <path d="M133 96 l 2 -7"/><path d="M136 100 l 3 -6"/>
+          <path d="M95 120 l 5 -8 l 5 8"/>
+        </g>
+      </svg>
+      <span class="font-marker text-xl text-ink">caramel</span>
+    </a>
+
+    <div class="hidden md:flex items-center gap-8 font-body text-sm font-medium text-ink">
+      <a href="#work"     class="hover:underline underline-offset-4">work</a>
+      <a href="#about"    class="hover:underline underline-offset-4">about</a>
+      <a href="#services" class="hover:underline underline-offset-4">services</a>
+      <a href="#contact"  class="hover:underline underline-offset-4">contact</a>
+    </div>
+
+    <a href="#contact" class="caramel-btn caramel-pill">
+      let's collaborate
+      <i data-lucide="arrow-up-right" class="w-3.5 h-3.5" stroke-width="3"></i>
+    </a>
+  </div>
+</nav>
+
+<!-- ===========================================================
+     TOP MARQUEE
+=========================================================== -->
+<div class="overflow-hidden border-y-2 border-ink py-3 bg-pink text-cream">
+  <div class="flex caramel-marquee-track gap-8 px-4 font-body font-bold uppercase tracking-widest text-sm" style="width: max-content;">
+    <span>illustration</span><span>★</span>
+    <span>branding</span><span>★</span>
+    <span>storytelling</span><span>★</span>
+    <span>campaigns</span><span>★</span>
+    <span>strategy</span><span>★</span>
+    <span>podcasting</span><span>★</span>
+    <span>character design</span><span>★</span>
+    <span>illustration</span><span>★</span>
+    <span>branding</span><span>★</span>
+    <span>storytelling</span><span>★</span>
+    <span>campaigns</span><span>★</span>
+    <span>strategy</span><span>★</span>
+    <span>podcasting</span><span>★</span>
+    <span>character design</span><span>★</span>
+  </div>
+</div>
+
+<!-- ===========================================================
+     HERO
+=========================================================== -->
+<section id="top" class="relative overflow-hidden bg-cream">
+  <div class="absolute inset-0 caramel-grain opacity-40 pointer-events-none"></div>
+
+  <!-- floating stickers -->
+  <div class="hidden lg:block absolute top-24 right-10 caramel-float">
+    <span class="caramel-pill">since 2018</span>
+  </div>
+  <div class="hidden lg:block absolute top-44 left-12 caramel-float" style="animation-delay: 1s;">
+    <span class="caramel-pill caramel-pill--lime">cork · ireland</span>
+  </div>
+  <div class="hidden lg:block absolute bottom-40 right-32 caramel-float" style="animation-delay: 1.8s;">
+    <span class="caramel-pill caramel-pill--orange">azorean by heart</span>
+  </div>
+
+  <div class="absolute top-32 right-1/4 caramel-spin-slow opacity-90 hidden md:block">
+    <svg width="36" height="36" viewBox="0 0 24 24" fill="#F25823"><path d="M12 1 L14.5 8.5 L22 9 L16 14 L18 22 L12 17.5 L6 22 L8 14 L2 9 L9.5 8.5 Z"/></svg>
+  </div>
+  <div class="absolute bottom-24 left-1/3 caramel-wiggle opacity-90 hidden md:block">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="#ED0086"><path d="M12 1 L14.5 8.5 L22 9 L16 14 L18 22 L12 17.5 L6 22 L8 14 L2 9 L9.5 8.5 Z"/></svg>
+  </div>
+
+  <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-10 pt-12 pb-24 lg:pt-20 lg:pb-32">
+    <div class="grid lg:grid-cols-12 gap-8 items-center">
+      <!-- headline -->
+      <div class="lg:col-span-7 relative">
+        <p class="font-hand text-2xl mb-2 text-pink">hello, hi —</p>
+        <h1 class="font-display text-5xl sm:text-6xl lg:text-7xl xl:text-8xl leading-[0.95]">
+          I'm <span class="text-orange">Inês</span><br>
+          Caramelo,<br>
+          <span class="font-serif-i text-pink">a creative</span><br>
+          <span class="relative inline-block">
+            strategist
+            <span class="absolute -right-6 -top-2 text-5xl text-lime">*</span>
+          </span>
+        </h1>
+        <p class="mt-6 font-body text-lg sm:text-xl max-w-xl">
+          shaping brands through illustration, story &amp; campaigns that
+          actually stop the scroll.
+        </p>
+
+        <div class="mt-8 flex flex-wrap gap-3 items-center">
+          <a href="#work" class="caramel-btn inline-flex items-center gap-2 font-body font-bold uppercase text-sm tracking-wider px-6 py-3 rounded-full"
+             style="background:#1A1A1A; color:#F5F1E8; border:2px solid #1A1A1A; box-shadow:4px 4px 0 #ED0086;">
+            see the work
+            <i data-lucide="arrow-down" class="w-4 h-4" stroke-width="3"></i>
+          </a>
+          <a href="#contact" class="caramel-btn inline-flex items-center gap-2 font-body font-bold uppercase text-sm tracking-wider px-6 py-3 rounded-full"
+             style="background:#D6CFF8; color:#1A1A1A; border:2px solid #1A1A1A; box-shadow:4px 4px 0 #1A1A1A;">
+            say hi
+            <i data-lucide="send" class="w-3.5 h-3.5" stroke-width="3"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- caramel medallion -->
+      <div class="lg:col-span-5 relative flex justify-center lg:justify-end">
+        <div class="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full flex items-center justify-center caramel-grain"
+             style="background:#D6CFF8; border:3px solid #1A1A1A; box-shadow:12px 12px 0 #ED0086;">
+          <div class="caramel-spin-slow absolute inset-0 flex items-center justify-center">
+            <svg viewBox="0 0 200 200" class="w-full h-full">
+              <defs>
+                <path id="caramel-circle" d="M 100, 100 m -78, 0 a 78,78 0 1,1 156,0 a 78,78 0 1,1 -156,0"/>
+              </defs>
+              <text font-family="Permanent Marker, cursive" font-size="14" fill="#1A1A1A" letter-spacing="3">
+                <textPath href="#caramel-circle">
+                  ★ illustration ★ branding ★ storytelling ★ campaigns ★ illustration ★ branding ★ storytelling ★ campaigns ★
+                </textPath>
+              </text>
+            </svg>
+          </div>
+          <div class="caramel-pop">
+            <svg width="140" height="140" viewBox="0 0 200 200" fill="none" aria-hidden="true">
+              <g stroke="#1A1A1A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none">
+                <path d="M55 60 q -6 -14, 4 -22 q 8 -6, 10 4 q 2 8 -6 10"/>
+                <path d="M75 50 q -2 -16, 10 -18 q 10 0, 8 12 q -2 8 -10 8"/>
+                <path d="M100 42 q 2 -16, 14 -14 q 12 4, 6 16 q -4 8 -12 6"/>
+                <path d="M130 50 q 8 -14, 18 -8 q 8 6, 0 16 q -6 6 -14 2"/>
+                <path d="M40 90 q -10 4, -14 14 q -2 10, 8 8"/>
+                <path d="M30 110 q -8 6, -2 16"/><path d="M40 130 q -6 4, 0 12"/>
+                <path d="M165 90 q 12 2, 16 14 q 2 12, -10 10"/>
+                <path d="M175 112 q 8 8, 0 18"/><path d="M165 132 q 8 4, 2 12"/>
+                <path d="M65 100 q 12 -10, 26 0"/>
+                <path d="M65 100 l -3 -6"/><path d="M72 96 l -2 -7"/><path d="M80 94 l 0 -7"/>
+                <path d="M88 96 l 2 -7"/><path d="M91 100 l 3 -6"/>
+                <path d="M110 100 q 12 -10, 26 0"/>
+                <path d="M110 100 l -3 -6"/><path d="M117 96 l -2 -7"/><path d="M125 94 l 0 -7"/>
+                <path d="M133 96 l 2 -7"/><path d="M136 100 l 3 -6"/>
+                <path d="M95 120 l 5 -8 l 5 8"/>
+              </g>
+            </svg>
+          </div>
+        </div>
+        <!-- scribble loop accent -->
+        <div class="absolute -bottom-4 -left-4 sm:-left-2 caramel-wiggle">
+          <svg width="90" height="90" viewBox="0 0 120 120" fill="none">
+            <path d="M10 70 Q 18 30, 45 55 Q 65 75, 70 40 Q 72 22, 55 28 Q 45 32, 55 55 Q 70 80, 95 65 Q 110 56, 105 80 Q 100 95, 80 95"
+                  stroke="#F25823" stroke-width="8" stroke-linecap="round" fill="none"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===========================================================
+     ABOUT
+=========================================================== -->
+<section id="about" class="relative overflow-hidden bg-lavender">
+  <div class="absolute inset-0 caramel-grain opacity-50 pointer-events-none"></div>
+  <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-10 py-20 lg:py-28">
+    <div class="flex items-end gap-3 mb-12">
+      <h2 class="font-marker text-5xl sm:text-6xl">about</h2>
+      <svg width="140" height="20" viewBox="0 0 200 20" fill="none">
+        <path d="M2 10 Q 12 2, 22 10 T 42 10 T 62 10 T 82 10 T 102 10 T 122 10 T 142 10 T 162 10 T 182 10 T 198 10"
+              stroke="#ED0086" stroke-width="4" stroke-linecap="round" fill="none"/>
+      </svg>
+    </div>
+
+    <div class="grid lg:grid-cols-12 gap-10 items-start">
+      <!-- photo placeholder -->
+      <div class="lg:col-span-5 relative">
+        <span class="caramel-tape caramel-grain" style="background:#BCDE3F; width:110px; top:-12px; left:20px; transform:rotate(-12deg);"></span>
+        <span class="caramel-tape caramel-grain" style="background:#F25823; width:90px; top:-14px; right:30px; transform:rotate(9deg);"></span>
+        <div class="relative aspect-[4/5] rounded-md overflow-hidden caramel-grain caramel-block"
+             style="background:linear-gradient(135deg, #F25823 0%, #ED0086 100%); transform:rotate(-2deg);">
+          <div class="absolute inset-0 flex flex-col items-center justify-center text-center p-6 text-cream">
+            <svg width="120" height="120" viewBox="0 0 200 200" fill="none" aria-hidden="true">
+              <g stroke="#F5F1E8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none">
+                <path d="M55 60 q -6 -14, 4 -22 q 8 -6, 10 4 q 2 8 -6 10"/>
+                <path d="M75 50 q -2 -16, 10 -18 q 10 0, 8 12 q -2 8 -10 8"/>
+                <path d="M100 42 q 2 -16, 14 -14 q 12 4, 6 16 q -4 8 -12 6"/>
+                <path d="M130 50 q 8 -14, 18 -8 q 8 6, 0 16 q -6 6 -14 2"/>
+                <path d="M65 100 q 12 -10, 26 0"/>
+                <path d="M110 100 q 12 -10, 26 0"/>
+                <path d="M95 120 l 5 -8 l 5 8"/>
+              </g>
+            </svg>
+            <p class="mt-4 font-marker text-2xl">drop your photo here</p>
+            <p class="mt-2 font-body text-sm opacity-80">replace this gradient block with a portrait</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- bio + stats -->
+      <div class="lg:col-span-7">
+        <p class="font-serif-i text-3xl sm:text-4xl leading-tight mb-6">
+          "a portfolio of illustration, branding &amp; creative projects."
+        </p>
+        <div class="space-y-4 font-body text-base sm:text-lg">
+          <p>
+            I'm a creative strategist and illustrator born in <strong>Ponta Delgada,
+            São Miguel</strong> and based in <strong>Cork, Ireland</strong>. I've spent the
+            last few years moving between agency life, freelance projects and
+            publishing — leading rebrands, drawing characters, building campaigns,
+            and occasionally co-hosting a podcast.
+          </p>
+          <p>
+            My work sits at the intersection of <em>illustration, branding and
+            storytelling</em>. I'm happiest when a project lets me do all three at once
+            — designing a mascot that becomes a podcast host, or turning a beauty
+            brand's launch into a series of hand-drawn social posts.
+          </p>
+        </div>
+
+        <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 gap-3">
+          <div class="rounded-2xl p-4 caramel-grain caramel-block--small" style="background:#ED0086; transform:rotate(-1deg);">
+            <div class="font-display text-2xl sm:text-3xl text-white">363K</div>
+            <div class="font-body text-xs uppercase tracking-wide mt-1 text-white">Facebook followers grown</div>
+          </div>
+          <div class="rounded-2xl p-4 caramel-grain caramel-block--small" style="background:#F25823; transform:rotate(1.5deg);">
+            <div class="font-display text-2xl sm:text-3xl text-white">TTG</div>
+            <div class="font-body text-xs uppercase tracking-wide mt-1 text-white">Top Agency 2023</div>
+          </div>
+          <div class="rounded-2xl p-4 caramel-grain caramel-block--small" style="background:#BCDE3F; transform:rotate(-1deg);">
+            <div class="font-display text-2xl sm:text-3xl text-ink">DRAWN</div>
+            <div class="font-body text-xs uppercase tracking-wide mt-1 text-ink">Best Illustrators feature</div>
+          </div>
+          <div class="rounded-2xl p-4 caramel-grain caramel-block--small" style="background:#D6CFF8; transform:rotate(1.5deg);">
+            <div class="font-display text-2xl sm:text-3xl text-ink">1×</div>
+            <div class="font-body text-xs uppercase tracking-wide mt-1 text-ink">Published children's book</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===========================================================
+     SERVICES
+=========================================================== -->
+<section id="services" class="relative overflow-hidden bg-ink">
+  <div class="absolute inset-0 caramel-grain opacity-30 pointer-events-none"></div>
+  <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-10 py-20 lg:py-28">
+    <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-12">
+      <div>
+        <p class="font-hand text-2xl mb-2 text-lime">what's in the toolkit —</p>
+        <h2 class="font-display text-5xl sm:text-6xl lg:text-7xl leading-[0.95] text-cream">
+          services I <span class="text-pink">play</span> with
+        </h2>
+      </div>
+      <p class="font-body max-w-md text-cream">
+        One person, six lanes. I'll happily own a project from strategy
+        through to the final caption — or jump in for the bit you actually
+        need help with.
+      </p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      <!-- service cards -->
+      <div class="caramel-card relative rounded-2xl p-6 caramel-grain"
+           style="background:#ED0086; border:2.5px solid #F5F1E8; box-shadow:6px 6px 0 #F5F1E8; transform:rotate(-0.8deg);">
+        <div class="w-14 h-14 rounded-full flex items-center justify-center mb-4 bg-ink">
+          <i data-lucide="sparkles" class="w-6 h-6 text-cream" stroke-width="2.4"></i>
+        </div>
+        <h3 class="font-marker text-2xl mb-2 text-ink">Online branding</h3>
+        <span class="inline-block font-body text-xs uppercase tracking-wider px-3 py-1 rounded-full bg-ink text-cream">01</span>
+      </div>
+
+      <div class="caramel-card relative rounded-2xl p-6 caramel-grain"
+           style="background:#F25823; border:2.5px solid #F5F1E8; box-shadow:6px 6px 0 #F5F1E8; transform:rotate(0.8deg);">
+        <div class="w-14 h-14 rounded-full flex items-center justify-center mb-4 bg-ink">
+          <i data-lucide="pen-tool" class="w-6 h-6 text-cream" stroke-width="2.4"></i>
+        </div>
+        <h3 class="font-marker text-2xl mb-2 text-ink">Illustrations</h3>
+        <span class="inline-block font-body text-xs uppercase tracking-wider px-3 py-1 rounded-full bg-ink text-cream">02</span>
+      </div>
+
+      <div class="caramel-card relative rounded-2xl p-6 caramel-grain"
+           style="background:#BCDE3F; border:2.5px solid #F5F1E8; box-shadow:6px 6px 0 #F5F1E8; transform:rotate(-0.8deg);">
+        <div class="w-14 h-14 rounded-full flex items-center justify-center mb-4 bg-ink">
+          <i data-lucide="camera" class="w-6 h-6 text-cream" stroke-width="2.4"></i>
+        </div>
+        <h3 class="font-marker text-2xl mb-2 text-ink">Content creation</h3>
+        <span class="inline-block font-body text-xs uppercase tracking-wider px-3 py-1 rounded-full bg-ink text-cream">03</span>
+      </div>
+
+      <div class="caramel-card relative rounded-2xl p-6 caramel-grain"
+           style="background:#D6CFF8; border:2.5px solid #F5F1E8; box-shadow:6px 6px 0 #F5F1E8; transform:rotate(0.8deg);">
+        <div class="w-14 h-14 rounded-full flex items-center justify-center mb-4 bg-ink">
+          <i data-lucide="lightbulb" class="w-6 h-6 text-cream" stroke-width="2.4"></i>
+        </div>
+        <h3 class="font-marker text-2xl mb-2 text-ink">Strategy</h3>
+        <span class="inline-block font-body text-xs uppercase tracking-wider px-3 py-1 rounded-full bg-ink text-cream">04</span>
+      </div>
+
+      <div class="caramel-card relative rounded-2xl p-6 caramel-grain"
+           style="background:#ED0086; border:2.5px solid #F5F1E8; box-shadow:6px 6px 0 #F5F1E8; transform:rotate(-0.8deg);">
+        <div class="w-14 h-14 rounded-full flex items-center justify-center mb-4 bg-ink">
+          <i data-lucide="film" class="w-6 h-6 text-cream" stroke-width="2.4"></i>
+        </div>
+        <h3 class="font-marker text-2xl mb-2 text-ink">Video production</h3>
+        <span class="inline-block font-body text-xs uppercase tracking-wider px-3 py-1 rounded-full bg-ink text-cream">05</span>
+      </div>
+
+      <div class="caramel-card relative rounded-2xl p-6 caramel-grain"
+           style="background:#F25823; border:2.5px solid #F5F1E8; box-shadow:6px 6px 0 #F5F1E8; transform:rotate(0.8deg);">
+        <div class="w-14 h-14 rounded-full flex items-center justify-center mb-4 bg-ink">
+          <i data-lucide="palette" class="w-6 h-6 text-cream" stroke-width="2.4"></i>
+        </div>
+        <h3 class="font-marker text-2xl mb-2 text-ink">Graphic design</h3>
+        <span class="inline-block font-body text-xs uppercase tracking-wider px-3 py-1 rounded-full bg-ink text-cream">06</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===========================================================
+     SELECTED WORK
+=========================================================== -->
+<section id="work" class="relative overflow-hidden bg-cream">
+  <div class="absolute inset-0 caramel-grain opacity-40 pointer-events-none"></div>
+  <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-10 py-20 lg:py-28">
+    <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-12">
+      <div>
+        <p class="font-hand text-2xl mb-2 text-orange">the greatest hits —</p>
+        <h2 class="font-display text-5xl sm:text-6xl lg:text-7xl leading-[0.95]">
+          selected <span class="text-pink">work</span>
+        </h2>
+      </div>
+      <span class="caramel-pill caramel-pill--lime" style="transform:rotate(4deg);">
+        <i data-lucide="star" class="w-3 h-3" fill="currentColor"></i> 5 case studies
+      </span>
+    </div>
+
+    <div class="grid lg:grid-cols-12 gap-6">
+      <!-- BARTER'S — full width feature -->
+      <a href="barters.html" class="caramel-card relative rounded-2xl overflow-hidden lg:col-span-12 block"
+         style="background:#ED0086; border:2.5px solid #1A1A1A; box-shadow:8px 8px 0 #1A1A1A; transform:rotate(-0.5deg);">
+        <div class="absolute inset-0 caramel-grain opacity-40 pointer-events-none"></div>
+        <div class="relative p-6 sm:p-8 grid lg:grid-cols-12 gap-6">
+          <div class="lg:col-span-7">
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <p class="font-body text-xs uppercase tracking-widest mb-2 opacity-80">Full rebrand · mascot · podcast · merch</p>
+                <h3 class="font-display text-3xl sm:text-4xl lg:text-5xl leading-[0.95]">Barter's Travelnet</h3>
+              </div>
+              <span class="shrink-0 font-marker text-lg px-3 py-1 rounded-full bg-ink text-cream">2023</span>
+            </div>
+            <p class="mt-5 font-body text-sm sm:text-base">
+              Led the full rebrand of Ireland's oldest travel agency — logo redesign, brand identity, and website. Created Bartie, the agency's mascot, and launched Bartie's Wanderlogue, a travel podcast I co-host, produce and edit. Following the rebrand, the agency was named Republic of Ireland's Top Agency at the TTG Top 50 Travel Agencies 2023.
+            </p>
+            <div class="mt-6 flex flex-wrap gap-2">
+              <span class="caramel-tag">Branding</span>
+              <span class="caramel-tag">Strategy</span>
+              <span class="caramel-tag">Podcast</span>
+              <span class="caramel-tag">Mascot</span>
+              <span class="caramel-tag">Content</span>
+            </div>
+            <span class="caramel-btn caramel-pill caramel-pill--ink mt-6 inline-flex">
+              read the case study
+              <i data-lucide="arrow-up-right" class="w-3.5 h-3.5" stroke-width="3"></i>
+            </span>
+          </div>
+          <div class="lg:col-span-5 grid grid-cols-2 gap-3 self-start">
+            <img src="assets/barters-storefront.jpg" alt="Rebranded Barter's storefront" loading="lazy"
+                 class="rounded-md w-full h-32 sm:h-40 object-cover col-span-2"
+                 style="border:2px solid #1A1A1A; box-shadow:4px 4px 0 #1A1A1A; transform:rotate(-1.5deg);" />
+            <img src="assets/barters-tote.jpg" alt="Branded Barter's tote bag" loading="lazy"
+                 class="rounded-md w-full h-28 sm:h-32 object-cover"
+                 style="border:2px solid #1A1A1A; box-shadow:4px 4px 0 #1A1A1A; transform:rotate(1.5deg);" />
+            <img src="assets/barters-cupcakes.jpg" alt="Bartie cupcakes" loading="lazy"
+                 class="rounded-md w-full h-28 sm:h-32 object-cover"
+                 style="border:2px solid #1A1A1A; box-shadow:4px 4px 0 #1A1A1A; transform:rotate(-2deg);" />
+          </div>
+        </div>
+      </a>
+
+      <!-- THE GIRL & THE BIRD -->
+      <a href="girl-and-bird.html" class="caramel-card relative rounded-2xl overflow-hidden lg:col-span-5 block"
+         style="background:#F25823; border:2.5px solid #1A1A1A; box-shadow:8px 8px 0 #1A1A1A; transform:rotate(1.4deg);">
+        <div class="absolute inset-0 caramel-grain opacity-40 pointer-events-none"></div>
+        <div class="relative p-6 sm:p-8 flex flex-col h-full">
+          <div class="flex items-start justify-between gap-4">
+            <div>
+              <p class="font-body text-xs uppercase tracking-widest mb-2 opacity-80">Children's book — written &amp; illustrated</p>
+              <h3 class="font-display text-3xl sm:text-4xl lg:text-5xl leading-[0.95]">The Girl &amp; the Bird</h3>
+            </div>
+            <span class="shrink-0 font-marker text-lg px-3 py-1 rounded-full bg-ink text-cream">2020</span>
+          </div>
+          <p class="mt-5 font-body text-sm sm:text-base">
+            My first published work — a handmade children's book I both wrote and illustrated, told primarily through visuals. Featured in DRAWN: The Best Illustrators in the World, alongside international talent.
+          </p>
+          <div class="mt-6 flex items-center justify-between flex-wrap gap-3">
+            <div class="flex flex-wrap gap-2">
+              <span class="caramel-tag">Illustration</span>
+              <span class="caramel-tag">Publishing</span>
+              <span class="caramel-tag">Authoring</span>
+            </div>
+            <span class="caramel-btn caramel-pill caramel-pill--ink">
+              see more
+              <i data-lucide="arrow-up-right" class="w-3.5 h-3.5" stroke-width="3"></i>
+            </span>
+          </div>
+        </div>
+      </a>
+
+      <!-- OSCAR SEASON -->
+      <a href="oscar-season.html" class="caramel-card relative rounded-2xl overflow-hidden lg:col-span-7 block"
+         style="background:#BCDE3F; border:2.5px solid #1A1A1A; box-shadow:8px 8px 0 #1A1A1A; transform:rotate(-1.2deg);">
+        <div class="absolute inset-0 caramel-grain opacity-40 pointer-events-none"></div>
+        <div class="relative p-6 sm:p-8 flex flex-col h-full">
+          <div class="flex items-start justify-between gap-4">
+            <div>
+              <p class="font-body text-xs uppercase tracking-widest mb-2 opacity-80">Character design · 363K community</p>
+              <h3 class="font-display text-3xl sm:text-4xl lg:text-5xl leading-[0.95]">Oscar Season — Cinemas</h3>
+            </div>
+            <span class="shrink-0 font-marker text-lg px-3 py-1 rounded-full bg-ink text-cream">2019</span>
+          </div>
+          <p class="mt-5 font-body text-sm sm:text-base">
+            Designed a character for the Oscar season campaign that ran across buses, billboards and cinemas. The illustrated content drove the Facebook community to over 363K followers.
+          </p>
+          <div class="mt-6 flex items-center justify-between flex-wrap gap-3">
+            <div class="flex flex-wrap gap-2">
+              <span class="caramel-tag">Illustration</span>
+              <span class="caramel-tag">Campaign</span>
+              <span class="caramel-tag">Social</span>
+            </div>
+            <span class="caramel-btn caramel-pill caramel-pill--ink">
+              see more
+              <i data-lucide="arrow-up-right" class="w-3.5 h-3.5" stroke-width="3"></i>
+            </span>
+          </div>
+        </div>
+      </a>
+
+      <!-- HELP JAMES -->
+      <a href="help-james.html" class="caramel-card relative rounded-2xl overflow-hidden lg:col-span-7 block"
+         style="background:#D6CFF8; border:2.5px solid #1A1A1A; box-shadow:8px 8px 0 #1A1A1A; transform:rotate(1.1deg);">
+        <div class="absolute inset-0 caramel-grain opacity-40 pointer-events-none"></div>
+        <div class="relative p-6 sm:p-8 flex flex-col h-full">
+          <div class="flex items-start justify-between gap-4">
+            <div>
+              <p class="font-body text-xs uppercase tracking-widest mb-2 opacity-80">Cork Airport — interactive campaign</p>
+              <h3 class="font-display text-3xl sm:text-4xl lg:text-5xl leading-[0.95]">Help James find Maria</h3>
+            </div>
+            <span class="shrink-0 font-marker text-lg px-3 py-1 rounded-full bg-ink text-cream">2021</span>
+          </div>
+          <p class="mt-5 font-body text-sm sm:text-base">
+            Created an interactive Facebook campaign for Cork Airport promoting Lisbon. Users followed video clues to solve a suitcase mix-up story for the chance to win a trip. Concept, scripts, game mechanics and on-location filming, all from Lisbon.
+          </p>
+          <div class="mt-6 flex items-center justify-between flex-wrap gap-3">
+            <div class="flex flex-wrap gap-2">
+              <span class="caramel-tag">Concept</span>
+              <span class="caramel-tag">Scripting</span>
+              <span class="caramel-tag">Production</span>
+            </div>
+            <span class="caramel-btn caramel-pill caramel-pill--ink">
+              see more
+              <i data-lucide="arrow-up-right" class="w-3.5 h-3.5" stroke-width="3"></i>
+            </span>
+          </div>
+        </div>
+      </a>
+
+      <!-- GOSH COPENHAGEN -->
+      <a href="gosh-copenhagen.html" class="caramel-card relative rounded-2xl overflow-hidden lg:col-span-5 block"
+         style="background:#F25823; border:2.5px solid #1A1A1A; box-shadow:8px 8px 0 #1A1A1A; transform:rotate(-1.8deg);">
+        <div class="absolute inset-0 caramel-grain opacity-40 pointer-events-none"></div>
+        <div class="relative p-6 sm:p-8 flex flex-col h-full">
+          <div class="flex items-start justify-between gap-4">
+            <div>
+              <p class="font-body text-xs uppercase tracking-widest mb-2 opacity-80">Illustrated content for PT social</p>
+              <h3 class="font-display text-3xl sm:text-4xl lg:text-5xl leading-[0.95]">GOSH Copenhagen</h3>
+            </div>
+            <span class="shrink-0 font-marker text-lg px-3 py-1 rounded-full bg-ink text-cream">2018–20</span>
+          </div>
+          <p class="mt-5 font-body text-sm sm:text-base">
+            While at Social Animals, I collaborated with GOSH Copenhagen — a Nordic makeup brand. For their Portuguese channels, I created illustrated content that translated the brand's visual identity into engaging digital storytelling.
+          </p>
+          <div class="mt-6 flex items-center justify-between flex-wrap gap-3">
+            <div class="flex flex-wrap gap-2">
+              <span class="caramel-tag">Illustration</span>
+              <span class="caramel-tag">Content</span>
+              <span class="caramel-tag">Brand</span>
+            </div>
+            <span class="caramel-btn caramel-pill caramel-pill--ink">
+              see more
+              <i data-lucide="arrow-up-right" class="w-3.5 h-3.5" stroke-width="3"></i>
+            </span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===========================================================
+     RECOGNITION MARQUEE
+=========================================================== -->
+<div class="overflow-hidden border-y-2 border-ink py-3 bg-orange text-cream">
+  <div class="flex caramel-marquee-track gap-8 px-4 font-body font-bold uppercase tracking-widest text-sm" style="width: max-content;">
+    <span>DRAWN — Best Illustrators in the World</span><span>✦</span>
+    <span>TTG Top 50 Travel Agencies · Top Agency 2023</span><span>✦</span>
+    <span>Cork Airport · Featured Campaign</span><span>✦</span>
+    <span>Social Animals · Senior Creative</span><span>✦</span>
+    <span>Bartie's Wanderlogue · Co-host &amp; Producer</span><span>✦</span>
+    <span>GOSH Copenhagen · Illustrated Series</span><span>✦</span>
+    <span>DRAWN — Best Illustrators in the World</span><span>✦</span>
+    <span>TTG Top 50 Travel Agencies · Top Agency 2023</span><span>✦</span>
+    <span>Cork Airport · Featured Campaign</span><span>✦</span>
+    <span>Social Animals · Senior Creative</span><span>✦</span>
+    <span>Bartie's Wanderlogue · Co-host &amp; Producer</span><span>✦</span>
+    <span>GOSH Copenhagen · Illustrated Series</span><span>✦</span>
+  </div>
+</div>
+
+<!-- ===========================================================
+     CONTACT
+=========================================================== -->
+<section id="contact" class="relative overflow-hidden bg-lime">
+  <div class="absolute inset-0 caramel-grain opacity-50 pointer-events-none"></div>
+  <div class="absolute top-10 right-10 caramel-spin-slow opacity-90 hidden md:block">
+    <svg width="140" height="140" viewBox="0 0 120 120" fill="none">
+      <path d="M10 70 Q 18 30, 45 55 Q 65 75, 70 40 Q 72 22, 55 28 Q 45 32, 55 55 Q 70 80, 95 65 Q 110 56, 105 80 Q 100 95, 80 95"
+            stroke="#ED0086" stroke-width="9" stroke-linecap="round" fill="none"/>
+    </svg>
+  </div>
+  <div class="absolute bottom-16 left-12 caramel-wiggle hidden md:block">
+    <svg width="42" height="42" viewBox="0 0 24 24" fill="#F25823"><path d="M12 1 L14.5 8.5 L22 9 L16 14 L18 22 L12 17.5 L6 22 L8 14 L2 9 L9.5 8.5 Z"/></svg>
+  </div>
+
+  <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-10 py-20 lg:py-28">
+    <div class="grid lg:grid-cols-12 gap-10 items-start">
+      <div class="lg:col-span-7">
+        <p class="font-hand text-2xl mb-2 text-pink">wanna make something sweet?</p>
+        <h2 class="font-marker text-6xl sm:text-7xl lg:text-8xl leading-[0.95] mb-6">chat with me</h2>
+        <p class="font-body text-lg max-w-xl mb-8">
+          Open to brand projects, illustration commissions, podcast guesting,
+          and the occasional left-field idea. Drop me a line — I read everything.
+        </p>
+        <a href="mailto:ines.caramelo6@gmail.com" class="caramel-btn inline-flex items-center gap-2 font-display text-2xl px-8 py-5 rounded-full"
+           style="background:#ED0086; color:#F5F1E8; border:3px solid #1A1A1A; box-shadow:6px 6px 0 #1A1A1A;">
+          start a project
+          <i data-lucide="arrow-up-right" class="w-7 h-7" stroke-width="3"></i>
+        </a>
+      </div>
+
+      <div class="lg:col-span-5 relative">
+        <span class="caramel-tape caramel-grain" style="background:#F25823; width:120px; top:-14px; left:20px; transform:rotate(-10deg);"></span>
+        <div class="rounded-2xl p-6 caramel-grain caramel-block"
+             style="background:#F5F1E8; transform:rotate(1.5deg);">
+          <h3 class="font-marker text-2xl mb-4">the basics</h3>
+          <ul class="space-y-3 font-body">
+            <li>
+              <a href="mailto:ines.caramelo6@gmail.com" class="flex items-center gap-3 group">
+                <span class="w-9 h-9 rounded-full flex items-center justify-center shrink-0" style="background:#ED0086;">
+                  <i data-lucide="mail" class="w-4 h-4 text-ink" stroke-width="2.4"></i>
+                </span>
+                <span class="group-hover:underline underline-offset-4">ines.caramelo6@gmail.com</span>
+              </a>
+            </li>
+            <li>
+              <a href="tel:+353851301508" class="flex items-center gap-3 group">
+                <span class="w-9 h-9 rounded-full flex items-center justify-center shrink-0" style="background:#F25823;">
+                  <i data-lucide="phone" class="w-4 h-4 text-ink" stroke-width="2.4"></i>
+                </span>
+                <span class="group-hover:underline underline-offset-4">+353 085 130 1508</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="flex items-center gap-3 group">
+                <span class="w-9 h-9 rounded-full flex items-center justify-center shrink-0" style="background:#BCDE3F;">
+                  <i data-lucide="map-pin" class="w-4 h-4 text-ink" stroke-width="2.4"></i>
+                </span>
+                <span class="group-hover:underline underline-offset-4">Cork, Ireland</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="flex items-center gap-3 group">
+                <span class="w-9 h-9 rounded-full flex items-center justify-center shrink-0" style="background:#D6CFF8;">
+                  <i data-lucide="instagram" class="w-4 h-4 text-ink" stroke-width="2.4"></i>
+                </span>
+                <span class="group-hover:underline underline-offset-4">@caramelo.ines</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="flex items-center gap-3 group">
+                <span class="w-9 h-9 rounded-full flex items-center justify-center shrink-0" style="background:#1A1A1A;">
+                  <i data-lucide="linkedin" class="w-4 h-4 text-cream" stroke-width="2.4"></i>
+                </span>
+                <span class="group-hover:underline underline-offset-4">in/inescaramelo</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===========================================================
+     FOOTER
+=========================================================== -->
+<footer class="relative overflow-hidden bg-ink">
+  <div class="absolute inset-0 caramel-grain opacity-30 pointer-events-none"></div>
+  <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-10 py-12">
+    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+      <a href="index.html" class="flex items-center gap-3">
+        <svg width="48" height="48" viewBox="0 0 200 200" fill="none" aria-hidden="true">
+          <g stroke="#F5F1E8" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none">
+            <path d="M55 60 q -6 -14, 4 -22 q 8 -6, 10 4 q 2 8 -6 10"/>
+            <path d="M75 50 q -2 -16, 10 -18 q 10 0, 8 12 q -2 8 -10 8"/>
+            <path d="M100 42 q 2 -16, 14 -14 q 12 4, 6 16 q -4 8 -12 6"/>
+            <path d="M130 50 q 8 -14, 18 -8 q 8 6, 0 16 q -6 6 -14 2"/>
+            <path d="M65 100 q 12 -10, 26 0"/>
+            <path d="M110 100 q 12 -10, 26 0"/>
+            <path d="M95 120 l 5 -8 l 5 8"/>
+          </g>
+        </svg>
+        <div>
+          <div class="font-marker text-2xl text-cream">caramel</div>
+          <div class="font-body text-xs uppercase tracking-widest opacity-70 text-cream">inês caramelo · creative studio of one</div>
+        </div>
+      </a>
+      <div class="flex items-center gap-3">
+        <span class="caramel-pill" style="transform:rotate(-4deg);">made with ♥ in cork</span>
+        <span class="caramel-pill caramel-pill--lime" style="transform:rotate(3deg);">© <span id="year">2026</span></span>
+      </div>
+    </div>
+    <div class="mt-8 pt-6 flex flex-col sm:flex-row gap-3 sm:items-center sm:justify-between" style="border-top:1.5px solid rgba(245,241,232,0.2);">
+      <p class="font-body text-xs opacity-70 text-cream">
+        illustration · branding · storytelling · campaigns · strategy · graphic design
+      </p>
+      <p class="font-body text-xs opacity-70 text-cream">ines.caramelo6@gmail.com</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // current year
+  document.getElementById('year').textContent = new Date().getFullYear();
+  // render lucide icons after they're loaded
+  window.addEventListener('load', () => { if (window.lucide) lucide.createIcons(); });
+</script>
+
+</body>
+</html>
